@@ -31,13 +31,13 @@ class AuthService
             $tokenResult = $this->user->createToken('Personal Access Token');
             $token = $tokenResult->plainTextToken;
 
-           /* $data = [
+           $data = [
                 'last_login_at' => Carbon::now('Europe/Istanbul')->toDateTimeString()
             ];
 
             $this->userRepo->update([
                 'id' => $this->user->id
-            ], $data); */
+            ], $data);
         } catch (Exception $e) {
             $message = 'LOGIN_SYSTEM_FAIL';
             throw new CustomException($e->getMessage());
