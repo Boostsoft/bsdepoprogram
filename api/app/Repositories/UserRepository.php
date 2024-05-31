@@ -26,6 +26,6 @@ class UserRepository extends AbstractRepository
                 AllowedFilter::exact('id'),
             ])
             ->defaultSort('-id')
-            ->allowedSorts(['id','name','surname','email','created_at','last_login_at','status']);
+            ->allowedSorts(['id','name','surname','email','phone_number','created_at','last_login_at','status']);
     }
 }
