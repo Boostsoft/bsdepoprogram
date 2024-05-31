@@ -11,16 +11,10 @@ use Illuminate\Http\JsonResponse;
 
 class IndexController extends Controller
 {
-    protected $userService;
 
-    public function __construct(UserService $userService)
+    public function __invoke(UserIndexRequest $request, UserService $userService): JsonResponse
     {
-        $this->userService = $userService;
-    }
-
-    public function __invoke(UserIndexRequest $request): JsonResponse
-    {
-        $users = $this->userService->getModels($request->validated());
+        $users = $userService->getModels($request->validated());
         return ApiResponse::data(UserResource::collection($users));
     }
 }

@@ -8,20 +8,13 @@ use App\Http\Requests\User\UserStoreRequest;
 use App\Http\Resources\UserResource;
 use App\Services\UserService;
 use Illuminate\Http\JsonResponse;
-use Illuminate\Http\Request;
 
 class StoreController extends Controller
 {
-    protected $userService;
 
-    public function __construct(UserService $userService)
+    public function __invoke(UserStoreRequest $request, UserService $userService): JsonResponse
     {
-        $this->userService = $userService;
-    }
-
-    public function __invoke(UserStoreRequest $request): JsonResponse
-    {
-        $result = $this->userService->storeModel($request->validated());
+        $result = $userService->storeModel($request->validated());
         return ApiResponse::message(true, 'USER_CREATED', new UserResource($result));
     }
 }
