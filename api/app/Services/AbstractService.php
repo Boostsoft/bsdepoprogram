@@ -49,13 +49,13 @@ abstract class AbstractService
         try {
             $model = $this->repository->create($data)->refresh();
         } catch (Exception $e) {
-            $message = sprintf('%s_NOT_CREATED',Str::upper($this->modelName));
-
+            $message = sprintf('%s_NOT_CREATED: %s', Str::upper($this->modelName), $e->getMessage());
             $this->errorExcptionLog($message, $data, $e->getMessage());
         }
 
         return $model;
     }
+
 
     public function updateModel(int $id, array $data)
     {
