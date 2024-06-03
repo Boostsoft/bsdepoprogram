@@ -26,3 +26,11 @@ Route::prefix('user')->group(function () {
     Route::delete('delete/{id}', [DeleteController::class, '__invoke']);
 
 });
+
+Route::prefix('productBrand')->group(function () {
+    Route::get('index',[\App\Http\Controllers\ProductBrand\IndexController::class, '__invoke']);
+    Route::post('store',[\App\Http\Controllers\ProductBrand\StoreController::class, '__invoke']);
+    Route::get('show/{id}', [\App\Http\Controllers\ProductBrand\ShowController::class, '__invoke']);
+    Route::put('update/{id}', [\App\Http\Controllers\ProductBrand\UpdateController::class, '__invoke']);
+    Route::delete('delete/{id}', [\App\Http\Controllers\ProductBrand\DeleteController::class, '__invoke']);
+});
