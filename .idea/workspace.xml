@@ -4,10 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< Updated upstream
     <list default="true" id="aa75629d-605f-41db-acc8-e3437d6b8468" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/api/app/Traits/HasFilterRequest.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/api/app/Traits/HasPagination.php" afterDir="false" />
     </list>
+=======
+    <list default="true" id="8f5c0239-e78d-4490-9512-1453a0c3f0c7" name="Changes" comment="" />
+>>>>>>> Stashed changes
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -140,14 +144,21 @@
     </include_path>
   </component>
   <component name="ProjectColorInfo">{
+<<<<<<< Updated upstream
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 8
 }</component>
   <component name="ProjectId" id="2hMUSIJJn2Dix1xtrVn3k6Z66Ol" />
+=======
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2hMRinVyCgAEzTgUTWlE9P22uTt" />
+>>>>>>> Stashed changes
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+<<<<<<< Updated upstream
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
@@ -160,6 +171,21 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+=======
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+>>>>>>> Stashed changes
   <component name="RunManager">
     <configuration name="Main" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner configuration_file="$PROJECT_DIR$/api/phpunit.xml" scope="XML" use_alternative_configuration_file="true" />
@@ -177,6 +203,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+<<<<<<< Updated upstream
       <changelist id="aa75629d-605f-41db-acc8-e3437d6b8468" name="Changes" comment="" />
       <created>1717403438112</created>
       <option name="number" value="Default" />
@@ -184,6 +211,15 @@
       <updated>1717403438112</updated>
       <workItem from="1717403439312" duration="8183000" />
       <workItem from="1717416197943" duration="178000" />
+=======
+      <changelist id="8f5c0239-e78d-4490-9512-1453a0c3f0c7" name="Changes" comment="" />
+      <created>1717402089134</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1717402089134</updated>
+      <workItem from="1717402090162" duration="512000" />
+      <workItem from="1717402660266" duration="538000" />
+>>>>>>> Stashed changes
     </task>
     <servers />
   </component>
