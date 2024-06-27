@@ -27,6 +27,14 @@ Route::prefix('user')->group(function () {
 
 });
 
+Route::prefix('customer')->group(function () {
+    Route::get('index', [\App\Http\Controllers\Customer\IndexController::class, '__invoke']);
+    Route::get('show/{id}', [\App\Http\Controllers\Customer\ShowController::class, '__invoke']);
+    Route::post('store',[\App\Http\Controllers\Customer\StoreController::class,'__invoke']);
+    Route::put('update/{id}', [\App\Http\Controllers\Customer\UpdateController::class, '__invoke']);
+    Route::delete('delete/{id}', [\App\Http\Controllers\Customer\DeleteController::class, '__invoke']);
+});
+
 Route::prefix('corporate')->group(function () {
     Route::get('index', [\App\Http\Controllers\CorporateCustomer\IndexController::class, '__invoke']);
     Route::get('show/{id}',[\App\Http\Controllers\CorporateCustomer\ShowController::class,'__invoke']);
