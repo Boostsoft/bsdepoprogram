@@ -17,4 +17,5 @@ trait HasPagination
             'to' => $result->lastItem()
         ];
     }
-}
+    }
+
