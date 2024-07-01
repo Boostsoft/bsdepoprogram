@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('warehouse', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
+            $table->string('name')->unique(); // `name` sütununa benzersiz anahtar ekle
             $table->string('city');
             $table->string('district');
             $table->integer('square_meters');
