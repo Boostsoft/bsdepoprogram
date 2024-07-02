@@ -21,4 +21,9 @@ class CorporateCustomer extends Model
         'contact_number',
         'email'
     ];
+
+    public function vehicles()
+    {
+        return $this->hasMany(Vehicle::class, 'customer', 'company_name');
+    }
 }

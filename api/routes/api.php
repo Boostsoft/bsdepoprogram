@@ -58,3 +58,11 @@ Route::prefix('productBrand')->group(function () {
     Route::put('update/{id}', [\App\Http\Controllers\ProductBrand\UpdateController::class, '__invoke']);
     Route::delete('delete/{id}', [\App\Http\Controllers\ProductBrand\DeleteController::class, '__invoke']);
 });
+
+Route::prefix('vehicle')->group(function () {
+    Route::get('index',[\App\Http\Controllers\Vehicle\IndexController::class, '__invoke']);
+    Route::post('store',[\App\Http\Controllers\Vehicle\StoreController::class, '__invoke']);
+    Route::get('show/{id}',[\App\Http\Controllers\Vehicle\ShowController::class, '__invoke']);
+    Route::put('update/{id}',[\App\Http\Controllers\Vehicle\UpdateController::class, '__invoke']);
+    Route::delete('delete/{id}', [\App\Http\Controllers\Vehicle\DeleteController::class, '__invoke']);
+});

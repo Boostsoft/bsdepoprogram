@@ -20,4 +20,9 @@ class Customer extends Model
         'email',
         'driver_license'
     ];
+
+    public function vehicles()
+    {
+        return $this->hasMany(Vehicle::class, 'customer', 'name');
+    }
 }
