@@ -20,6 +20,8 @@ class StoreRequest extends FormRequest
             'product_brand' => 'required|string',
             'part_type' => 'required|string',
             'unit' => 'required|string',
+            'car_type' => 'required|string',
+            'photo' => 'required|string'
         ];
     }
 }

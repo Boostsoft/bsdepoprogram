@@ -18,6 +18,8 @@ class Product extends Model
             'product_brand',
             'part_type',
             'unit',
+            'car_type',
+            'photo'
         ];
 
     public function productBrand()

@@ -27,9 +27,11 @@ class ProductRepository extends AbstractRepository
                 AllowedFilter::exact('product_brand'),
                 AllowedFilter::exact('part_type'),
                 AllowedFilter::exact('unit'),
+                AllowedFilter::exact('car_type'),
+                AllowedFilter::exact('photo'),
             ])
             ->defaultSort('-id')
-            ->allowedSorts(['id','stock_code', 'name', 'product_brand', 'part_type', 'unit']);
+            ->allowedSorts(['id','stock_code', 'name', 'product_brand', 'part_type', 'unit', 'car_type', 'photo']);
     }
 }
 

@@ -18,9 +18,11 @@ return new class extends Migration
             $table->string('product_brand');
             $table->string('part_type');
             $table->string('unit');
+            $table->string('car_type');
+            $table->string('photo');
             $table->timestamps();
 
-            $table->foreign('product_brand')->references('name')->on('product_brands')->onDelete('cascade');
+            $table->foreign('product_brand')->references('name')->on('product_brands');
         });
     }
 
