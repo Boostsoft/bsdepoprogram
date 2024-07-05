@@ -28,6 +28,8 @@ return new class extends Migration
             $table->string('license'); // ruhsat
             $table->timestamps();
 
+            $table->foreign('customer')->references('company_name')->on('corporate_customers');
+
         });
     }
 

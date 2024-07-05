@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('corporate_customers', function (Blueprint $table) {
             $table->id();
             $table->string('company_type');
-            $table->string('company_name');
+            $table->string('company_name')->unique();
             $table->string('tax_id')->unique();
             $table->string('tckn')->nullable(); // Şahıs şirketi için zorunlu, kurumsal şirket için opsiyonel
             $table->string('authorized_person');

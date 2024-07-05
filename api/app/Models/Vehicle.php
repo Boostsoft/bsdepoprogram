@@ -24,4 +24,11 @@ class Vehicle extends Model
         'customer',
         'license',
     ];
+
+    public function customer()
+    {
+        if ($this->customer_type === 'kurumsal') {
+            return $this->belongsTo(CorporateCustomer::class, 'customer', 'company_name');
+        }
+    }
 }
