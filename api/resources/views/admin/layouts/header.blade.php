@@ -273,7 +273,10 @@
                     <a class="dropdown-item" href="../../../../../Desktop/themeforest-ONNaIpUk-dreamspos-pos-inventory-management-admin-dashboard-template/html/template/profile.html"> <i class="me-2" data-feather="user"></i> My Profile</a>
                     <a class="dropdown-item" href="../../../../../Desktop/themeforest-ONNaIpUk-dreamspos-pos-inventory-management-admin-dashboard-template/html/template/general-settings.html"><i class="me-2" data-feather="settings"></i>Settings</a>
                     <hr class="m-0">
-                    <a class="dropdown-item logout pb-0" href="../../../../../Desktop/themeforest-ONNaIpUk-dreamspos-pos-inventory-management-admin-dashboard-template/html/template/signin.html"><img src="assets/img/icons/log-out.svg" class="me-2" alt="img">Logout</a>
+                    <form id="mobile-logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                        @csrf
+                    </form>
+                    <a class="dropdown-item" href="javascript:void(0);" onclick="document.getElementById('mobile-logout-form').submit();">Logout</a>
                 </div>
             </div>
         </li>

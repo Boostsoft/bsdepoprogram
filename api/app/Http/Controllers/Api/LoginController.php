@@ -9,6 +9,7 @@ use App\Http\Resources\AuthResource;
 use App\Services\AuthService;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class LoginController extends Controller
 {
@@ -46,12 +47,21 @@ class LoginController extends Controller
             $token = $this->authService->login($credentials);
 
             if ($token) {
-                return redirect()->route('index');
+                return redirect()->route('admin.index');
             } else {
                 return back()->withErrors(['email' => 'Giriş başarısız. Lütfen bilgilerinizi kontrol edin.']);
             }
         } catch (Exception $e) {
             return back()->withErrors(['email' => $e->getMessage()]);
         }
+    }
+
+    public function logout(Request $request)
+    {
+        Auth::logout();
+        $request->session()->invalidate();
+        $request->session()->regenerateToken();
+
+        return redirect('/login');
     }
 }
