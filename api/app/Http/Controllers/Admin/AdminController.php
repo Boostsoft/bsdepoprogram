@@ -11,4 +11,9 @@ class AdminController extends Controller
     {
         return view('admin.index');
     }
+
+    public function productBrand()
+    {
+        return view('admin.product-brand.productBrand');
+    }
 }

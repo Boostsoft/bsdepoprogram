@@ -12,3 +12,4 @@ Route::post('/login', [App\Http\Controllers\Api\LoginController::class, 'login']
 Route::post('/logout', [App\Http\Controllers\Api\LoginController::class, 'logout'])->name('logout');
 
 Route::get('/', [App\Http\Controllers\Admin\AdminController::class, 'index'])->name('admin.index');
+Route::get('/product-brand', [App\Http\Controllers\Admin\AdminController::class, 'productBrand'])->name('admin.productBrand');
