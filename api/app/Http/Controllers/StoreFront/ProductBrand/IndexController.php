@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\ProductBrand;
+namespace App\Http\Controllers\StoreFront\ProductBrand;
 
 use App\Helpers\ApiResponse;
 use App\Http\Controllers\Controller;
@@ -13,12 +13,11 @@ use Illuminate\Http\JsonResponse;
 
 class IndexController extends Controller
 {
-    public function __invoke(IndexRequest $request, ProductBrandService $productBrandService): JsonResponse
+    public function __invoke(IndexRequest $request, ProductBrandService $productBrandService)
     {
         $result = $productBrandService->getModels(
             $request->all()
         );
-        return ApiResponse::data(ProductBrandResource::collection($result));
+        return view('admin.product-brand.list', ['brands' => $result]); // Veriyi view'e gönder
     }
-
 }

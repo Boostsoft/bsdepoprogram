@@ -17,7 +17,8 @@ class StoreController extends Controller
             $request->validated()
         );
 
-        return ApiResponse::message(true, 'PRODUCT_BRAND_CREATED', new ProductBrandResource($result));
+        return redirect()->route('admin.productBrand')->with('success', 'Marka başarıyla eklendi!');
 
     }
+
 }

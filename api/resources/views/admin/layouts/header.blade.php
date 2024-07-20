@@ -3,13 +3,13 @@
     <!-- Logo -->
     <div class="header-left active">
         <a href="index.html" class="logo logo-normal">
-            <img src="assets/img/logo.png" alt="">
+            <img src="{{asset('assets/img/logo.png')}}" alt="">
         </a>
         <a href="index.html" class="logo logo-white">
-            <img src="assets/img/logo-white.png" alt="">
+            <img src="{{asset('assets/img/logo-white.png')}}" alt="">
         </a>
         <a href="index.html" class="logo-small">
-            <img src="assets/img/logo-small.png" alt="">
+            <img src="{{asset('assets/img/logo-small.png')}}" alt="">
         </a>
         <a id="toggle_btn" href="javascript:void(0);">
             <i data-feather="chevrons-left" class="feather-16"></i>
@@ -65,7 +65,7 @@
                             <a href="../../../../../Desktop/themeforest-ONNaIpUk-dreamspos-pos-inventory-management-admin-dashboard-template/html/template/activities.html">
                                 <div class="media d-flex">
 											<span class="avatar flex-shrink-0">
-												<img alt="" src="assets/img/profiles/avatar-02.jpg">
+												<img alt="" src="{{asset('assets/img/profiles/avatar-02.jpg')}}">
 											</span>
                                     <div class="media-body flex-grow-1">
                                         <p class="noti-details"><span class="noti-title">John Doe</span> added
@@ -81,7 +81,7 @@
                             <a href="../../../../../Desktop/themeforest-ONNaIpUk-dreamspos-pos-inventory-management-admin-dashboard-template/html/template/activities.html">
                                 <div class="media d-flex">
 											<span class="avatar flex-shrink-0">
-												<img alt="" src="assets/img/profiles/avatar-03.jpg">
+												<img alt="" src="{{asset('assets/img/profiles/avatar-03.jpg')}}">
 											</span>
                                     <div class="media-body flex-grow-1">
                                         <p class="noti-details"><span class="noti-title">Tarah Shropshire</span>
@@ -98,7 +98,7 @@
                             <a href="../../../../../Desktop/themeforest-ONNaIpUk-dreamspos-pos-inventory-management-admin-dashboard-template/html/template/activities.html">
                                 <div class="media d-flex">
 											<span class="avatar flex-shrink-0">
-												<img alt="" src="assets/img/profiles/avatar-06.jpg">
+												<img alt="" src="{{asset('assets/img/profiles/avatar-06.jpg')}}">
 											</span>
                                     <div class="media-body flex-grow-1">
                                         <p class="noti-details"><span class="noti-title">Misty Tison</span>
@@ -116,7 +116,7 @@
                             <a href="../../../../../Desktop/themeforest-ONNaIpUk-dreamspos-pos-inventory-management-admin-dashboard-template/html/template/activities.html">
                                 <div class="media d-flex">
 											<span class="avatar flex-shrink-0">
-												<img alt="" src="assets/img/profiles/avatar-17.jpg">
+												<img alt="" src="{{asset('assets/img/profiles/avatar-17.jpg')}}">
 											</span>
                                     <div class="media-body flex-grow-1">
                                         <p class="noti-details"><span class="noti-title">Rolland Webber</span>
@@ -131,7 +131,7 @@
                             <a href="../../../../../Desktop/themeforest-ONNaIpUk-dreamspos-pos-inventory-management-admin-dashboard-template/html/template/activities.html">
                                 <div class="media d-flex">
 											<span class="avatar flex-shrink-0">
-												<img alt="" src="assets/img/profiles/avatar-13.jpg">
+												<img alt="" src="{{asset('assets/img/profiles/avatar-13.jpg')}}">
 											</span>
                                     <div class="media-body flex-grow-1">
                                         <p class="noti-details"><span class="noti-title">Bernardo Galaviz</span>
@@ -158,7 +158,7 @@
             <a href="javascript:void(0);" class="dropdown-toggle nav-link userset" data-bs-toggle="dropdown">
 						<span class="user-info">
 							<span class="user-letter">
-								<img src="assets/img/profiles/avator1.jpg" alt="" class="img-fluid">
+								<img src="{{asset('assets/img/profiles/avator1.jpg')}}" alt="" class="img-fluid">
 							</span>
 							<span class="user-detail">
 								<span class="user-name">John Smilga</span>
@@ -169,7 +169,7 @@
             <div class="dropdown-menu menu-drop-user">
                 <div class="profilename">
                     <div class="profileset">
-								<span class="user-img"><img src="assets/img/profiles/avator1.jpg" alt="">
+								<span class="user-img"><img src="{{asset('assets/img/profiles/avator1.jpg')}}" alt="">
 									<span class="status online"></span></span>
                         <div class="profilesets">
                             <h6>John Smilga</h6>

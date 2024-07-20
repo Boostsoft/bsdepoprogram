@@ -76,38 +76,38 @@
                 <ul class="tab nav nav-tabs" id="myTab" role="tablist">
                     <li class="nav-item" role="presentation">
                         <a class="tablinks nav-link active" href="#home" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"  role="tab" aria-selected="true">
-                            <img src="assets/img/icons/menu-icon.svg" alt="">
+                            <img src="../assets/img/icons/menu-icon.svg" alt="">
                         </a>
                     </li>
                     <li class="nav-item" role="presentation">
                         <a class="tablinks nav-link" href="#messages" id="messages-tab" data-bs-toggle="tab" data-bs-target="#product"  role="tab" aria-selected="false">
-                            <img src="assets/img/icons/product.svg" alt="">
+                            <img src="../assets/img/icons/product.svg" alt="">
                         </a>
                     </li>
                     <li class="nav-item" role="presentation">
                         <a class="tablinks nav-link"  href="#profile" id="profile-tab" data-bs-toggle="tab" data-bs-target="#sales"  role="tab" aria-selected="false">
-                            <img src="assets/img/icons/sales1.svg" alt="">
+                            <img src="../assets/img/icons/sales1.svg" alt="">
                         </a>
                     </li>
 
                     <li class="nav-item" role="presentation">
                         <a class="tablinks nav-link" href="#report" id="report-tab" data-bs-toggle="tab" data-bs-target="#purchase"  role="tab" aria-selected="true">
-                            <img src="assets/img/icons/purchase1.svg" alt="">
+                            <img src="../assets/img/icons/purchase1.svg" alt="">
                         </a>
                     </li>
                     <li class="nav-item" role="presentation">
                         <a class="tablinks nav-link" href="#set" id="set-tab" data-bs-toggle="tab" data-bs-target="#user"  role="tab" aria-selected="true">
-                            <img src="assets/img/icons/users1.svg" alt="">
+                            <img src="../assets/img/icons/users1.svg" alt="">
                         </a>
                     </li>
                     <li class="nav-item" role="presentation">
                         <a class="tablinks nav-link" href="#set2" id="set-tab2" data-bs-toggle="tab" data-bs-target="#employee"  role="tab" aria-selected="true">
-                            <img src="assets/img/icons/calendars.svg" alt="">
+                            <img src="../assets/img/icons/calendars.svg" alt="">
                         </a>
                     </li>
                     <li class="nav-item" role="presentation">
                         <a class="tablinks nav-link" href="#set3" id="set-tab3" data-bs-toggle="tab" data-bs-target="#report"  role="tab" aria-selected="true">
-                            <img src="assets/img/icons/printer.svg" alt="">
+                            <img src="../assets/img/icons/printer.svg" alt="">
                         </a>
                     </li>
                     <li class="nav-item" role="presentation">
@@ -521,7 +521,7 @@
                 </ul>
             </li>
             <li class="submenu">
-                <a href="javascript:void(0);"><img src="assets/img/icons/product.svg" alt="img"><span> Inventory
+                <a href="javascript:void(0);"><img src="../assets/img/icons/product.svg" alt="img"><span> Inventory
 							</span> <span class="menu-arrow"></span></a>
                 <ul>
                     <li><a href="../../../../../Desktop/themeforest-ONNaIpUk-dreamspos-pos-inventory-management-admin-dashboard-template/html/template/product-list.html"><span>Products</span></a></li>
@@ -539,7 +539,7 @@
                 </ul>
             </li>
             <li class="submenu">
-                <a href="javascript:void(0);"><img src="assets/img/icons/purchase1.svg" alt="img"><span>Sales &amp; Purchase</span> <span class="menu-arrow"></span></a>
+                <a href="javascript:void(0);"><img src="../assets/img/icons/purchase1.svg" alt="img"><span>Sales &amp; Purchase</span> <span class="menu-arrow"></span></a>
                 <ul>
                     <li class="submenu">
                         <a href="javascript:void(0);"><span>Sales</span><span class="menu-arrow"></span></a>
@@ -573,7 +573,7 @@
                 </ul>
             </li>
             <li class="submenu">
-                <a href="javascript:void(0);"><img src="assets/img/icons/users1.svg" alt="img"><span>User Management</span> <span class="menu-arrow"></span></a>
+                <a href="javascript:void(0);"><img src="../assets/img/icons/users1.svg" alt="img"><span>User Management</span> <span class="menu-arrow"></span></a>
                 <ul>
                     <li class="submenu">
                         <a href="javascript:void(0);"><span>People</span><span class="menu-arrow"></span></a>
@@ -814,7 +814,7 @@
                 </ul>
             </li>
             <li class="submenu">
-                <a href="javascript:void(0);"><img src="assets/img/icons/printer.svg" alt="img"><span>Reports</span> <span class="menu-arrow"></span></a>
+                <a href="javascript:void(0);"><img src="../assets/img/icons/printer.svg" alt="img"><span>Reports</span> <span class="menu-arrow"></span></a>
                 <ul>
                     <li><a href="../../../../../Desktop/themeforest-ONNaIpUk-dreamspos-pos-inventory-management-admin-dashboard-template/html/template/sales-report.html"><span>Sales Report</span></a></li>
                     <li><a href="../../../../../Desktop/themeforest-ONNaIpUk-dreamspos-pos-inventory-management-admin-dashboard-template/html/template/purchase-report.html"><span>Purchase report</span></a></li>
@@ -829,7 +829,7 @@
                 </ul>
             </li>
             <li class="submenu">
-                <a href="javascript:void(0);"><img src="assets/img/icons/settings.svg" alt="img"><span> Settings</span> <span class="menu-arrow"></span></a>
+                <a href="javascript:void(0);"><img src="../assets/img/icons/settings.svg" alt="img"><span> Settings</span> <span class="menu-arrow"></span></a>
                 <ul>
                     <li class="submenu">
                         <a href="javascript:void(0);"><span>General Settings</span><span class="menu-arrow"></span></a>

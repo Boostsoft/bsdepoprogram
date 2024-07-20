@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\ProductBrand;
 use Illuminate\Http\Request;
 
 class AdminController extends Controller
@@ -12,8 +13,4 @@ class AdminController extends Controller
         return view('admin.index');
     }
 
-    public function productBrand()
-    {
-        return view('admin.product-brand.productBrand');
-    }
 }

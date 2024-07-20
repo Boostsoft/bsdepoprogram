@@ -23,6 +23,6 @@
         </li>
     </ul>
     <div class="page-btn">
-        <a href="#" class="btn btn-added" data-bs-toggle="modal" data-bs-target="#add-brand"><i data-feather="plus-circle" class="me-2"></i>Yeni Marka Ekle</a>
+        <a href="{{url('product-brand/add')}}" class="btn btn-added" ><i data-feather="plus-circle" class="me-2"></i>Yeni Marka Ekle</a>
     </div>
 </div>
