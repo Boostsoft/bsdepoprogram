@@ -1,4 +1,9 @@
-@extends('admin.layouts.master')
-@section('title', 'Boostsoft | Yönetim Paneli')
+<?php $page = 'product-list'; ?>
+@extends('admin.layouts.mainlayout')
 @section('content')
+    <div class="page-wrapper">
+        <div class="content">
+
+        </div>
+    </div>
 @endsection

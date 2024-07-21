@@ -14,11 +14,15 @@ Route::post('/logout', [App\Http\Controllers\Api\LoginController::class, 'logout
 Route::get('/', [App\Http\Controllers\Admin\AdminController::class, 'index'])->name('admin.index');
 
 
-Route::get('/product-brand', [App\Http\Controllers\StoreFront\ProductBrand\IndexController::class, '__invoke']);
-Route::get('/product-brand/add', [App\Http\Controllers\StoreFront\ProductBrand\StoreController::class, 'view']);
-Route::post('/product-brand/add', [App\Http\Controllers\StoreFront\ProductBrand\StoreController::class, 'add'])->name('product-brand.add');
-Route::get('/product-brand/edit/{id}', [App\Http\Controllers\StoreFront\ProductBrand\UpdateController::class, 'view']);
-Route::put('/product-brand/{id}', [App\Http\Controllers\StoreFront\ProductBrand\UpdateController::class, 'edit'])->name('product-brand.edit');
+Route::prefix('product-brand')->group(function () {
+    Route::get('', [App\Http\Controllers\StoreFront\ProductBrand\IndexController::class, 'list'])->name('product-brand.list');
+    Route::get('/add', [App\Http\Controllers\StoreFront\ProductBrand\StoreController::class, 'view'])->name('product-brand.add.view');
+    Route::post('/add', [App\Http\Controllers\StoreFront\ProductBrand\StoreController::class, 'add'])->name('product-brand.add');
+    Route::get('/edit/{id}', [App\Http\Controllers\StoreFront\ProductBrand\UpdateController::class, 'view'])->name('product-brand.edit.view');
+    Route::put('/{id}', [App\Http\Controllers\StoreFront\ProductBrand\UpdateController::class, 'edit'])->name('product-brand.edit');
+});
+
+
 
 
 

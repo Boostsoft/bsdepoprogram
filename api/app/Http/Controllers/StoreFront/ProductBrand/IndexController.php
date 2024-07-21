@@ -13,7 +13,7 @@ use Illuminate\Http\JsonResponse;
 
 class IndexController extends Controller
 {
-    public function __invoke(IndexRequest $request, ProductBrandService $productBrandService)
+    public function list(IndexRequest $request, ProductBrandService $productBrandService)
     {
         $result = $productBrandService->getModels(
             $request->all()
