@@ -20,12 +20,6 @@ Route::prefix('product-brand')->group(function () {
     Route::post('/add', [App\Http\Controllers\StoreFront\ProductBrand\StoreController::class, 'add'])->name('product-brand.add');
     Route::get('/edit/{id}', [App\Http\Controllers\StoreFront\ProductBrand\UpdateController::class, 'view'])->name('product-brand.edit.view');
     Route::put('/{id}', [App\Http\Controllers\StoreFront\ProductBrand\UpdateController::class, 'edit'])->name('product-brand.edit');
+    Route::delete('/delete', [App\Http\Controllers\StoreFront\ProductBrand\DeleteController::class, 'delete'])->name('product-brand.delete');
 });
 
-
-
-
-
-
-
-Route::delete('/product-brand/{id}', [App\Http\Controllers\ProductBrand\DeleteController::class, '__invoke'])->name('admin.deleteProductBrand');

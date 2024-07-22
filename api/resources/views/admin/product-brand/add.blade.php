@@ -5,16 +5,16 @@
         <div class="content">
             @component('admin.components.breadcrumb')
                 @slot('title')
-                    New Product
+                    Yeni Marka
                 @endslot
                 @slot('li_1')
-                    Create new product
+                    Yeni marka oluştur
                 @endslot
                 @slot('li_2')
                     product-brand.list
                 @endslot
                 @slot('li_3')
-                    Back to Product
+                    Geri
                 @endslot
             @endcomponent
             <!-- /add -->
@@ -29,7 +29,7 @@
                                     <div class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
                                          aria-controls="collapseOne">
                                         <div class="addproduct-icon">
-                                            <h5><i data-feather="info" class="add-info"></i><span>Product Information</span>
+                                            <h5><i data-feather="info" class="add-info"></i><span>Marka Bilgisi</span>
                                             </h5>
                                             <a href="javascript:void(0);"><i data-feather="chevron-down" class="chevron-down-add"></i></a>
                                         </div>
@@ -41,7 +41,7 @@
                                         <div class="row">
                                             <div class="col-lg-4 col-sm-6 col-12">
                                                 <div class="mb-3 add-product">
-                                                    <label class="form-label">Product Name</label>
+                                                    <label class="form-label">Marka Adı</label>
                                                     <input required type="text" name="name" class="form-control @error('name'){{'is-invalid'}}@enderror">
                                                     <div class="invalid-feedback">@error('name'){{$message}}@enderror</div>
                                                 </div>
@@ -55,8 +55,7 @@
                 </div>
                 <div class="col-lg-12">
                     <div class="btn-addproduct mb-4">
-                        <button type="button" class="btn btn-cancel me-2">Cancel</button>
-                        <button type="submit" class="btn btn-submit">Save Product</button>
+                        <button type="submit" class="btn btn-submit">Kaydet</button>
                     </div>
                 </div>
             </form>

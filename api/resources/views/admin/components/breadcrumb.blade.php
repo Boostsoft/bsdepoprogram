@@ -2,7 +2,7 @@
     <div class="page-header">
         <div class="add-item d-flex">
             <div class="page-title">
-                <h4>{{ $title }}asdasdas</h4>
+                <h4>{{ $title }}</h4>
                 <h6>{{ $li_1 }}</h6>
             </div>
         </div>
@@ -59,10 +59,6 @@
             <div class="page-btn">
                 <a href="{{ $li_2 }}" class="btn btn-added"><i data-feather="plus-circle"
                         class="me-2"></i>{{ $li_3 }}</a>
-            </div>
-            <div class="page-btn import">
-                <a href="#" class="btn btn-added color" data-bs-toggle="modal" data-bs-target="#view-notes"><i
-                        data-feather="download" class="me-2"></i>{{ $li_4 }}</a>
             </div>
         @endif
     </div>

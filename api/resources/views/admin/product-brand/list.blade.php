@@ -16,27 +16,28 @@
                 @slot('li_3')
                     Marka Ekle
                 @endslot
-                @slot('li_4')
-                    Import Product
-                @endslot
             @endcomponent
 
             <!-- /product list -->
             <div class="card table-list-card">
                 <div class="card-body">
-                    <div class="table-top">
-                        <div class="search-set">
-                            <div class="search-input">
-                                <a href="javascript:void(0);" class="btn btn-searchset"><i data-feather="search"
-                                        class="feather-search"></i></a>
+                    <form method="POST" action="{{ route('product-brand.delete') }}">
+                        @csrf
+                        @method('DELETE')
+                        <div class="table-top">
+                            <button type="submit" class="btn btn-primary">Sil</button>
+                            <div class="search-set">
+                                <div class="search-input">
+                                    <a href="javascript:void(0);" class="btn btn-searchset"><i data-feather="search"
+                                                                                               class="feather-search"></i></a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- /Filter -->
-                    <!-- /Filter -->
-                    <div class="table-responsive product-list">
-                        <table class="table datanew">
-                            <thead>
+                        <!-- /Filter -->
+                        <!-- /Filter -->
+                        <div class="table-responsive product-list">
+                            <table class="table datanew">
+                                <thead>
                                 <tr>
                                     <th class="no-sort">
                                         <label class="checkboxs">
@@ -47,23 +48,24 @@
                                     <th>ID</th>
                                     <th>Marka</th>
                                 </tr>
-                            </thead>
-                            <tbody>
+                                </thead>
+                                <tbody>
                                 @foreach($brands as $brand)
                                     <tr>
                                         <td>
                                             <label class="checkboxs">
-                                                <input type="checkbox">
+                                                <input type="checkbox" name="ids[]" value="{{ $brand->id }}">
                                                 <span class="checkmarks"></span>
                                             </label>
                                         </td>
-                                        <td><a href="{{route('product-brand.edit.view', $brand->id)}}">{{ $brand->id }}</a></td>
+                                        <td><a href="{{ route('product-brand.edit.view', $brand->id) }}">{{ $brand->id }}</a></td>
                                         <td>{{ $brand->name }}</td>
                                     </tr>
                                 @endforeach
-                            </tbody>
-                        </table>
-                    </div>
+                                </tbody>
+                            </table>
+                        </div>
+                    </form>
                 </div>
             </div>
             <!-- /product list -->
