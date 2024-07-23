@@ -58,8 +58,12 @@
                                                 <span class="checkmarks"></span>
                                             </label>
                                         </td>
-                                        <td><a href="{{ route('product-brand.edit.view', $brand->id) }}">{{ $brand->id }}</a></td>
-                                        <td>{{ $brand->name }}</td>
+                                        <td><a href="{{ route('product-brand.edit.view', $brand->id) }}" style="display: block; width: 100%; height: 100%; color: inherit; text-decoration: none;">{{ $brand->id }}</a></td>
+                                        <td>
+                                            <a href="{{ route('product-brand.edit.view', $brand->id) }}" style="display: block; width: 100%; height: 100%; color: inherit; text-decoration: none;">
+                                                {{ $brand->name }}
+                                            </a>
+                                        </td>
                                     </tr>
                                 @endforeach
                                 </tbody>

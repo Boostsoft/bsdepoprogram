@@ -55,7 +55,6 @@
                 </div>
                 <div class="col-lg-12">
                     <div class="btn-addproduct mb-4">
-                        <button type="button" class="btn btn-cancel me-2">iptal</button>
                         <button type="submit" class="btn btn-submit">Kaydet</button>
                     </div>
                 </div>
