@@ -26,4 +26,9 @@ class ProductBrandRepository extends AbstractRepository
             ->defaultSort('-id')
             ->allowedSorts(['id','name']);
     }
+
+    public function getAll()
+    {
+        return $this->model->all(); // Tüm markaları döndürür
+    }
 }

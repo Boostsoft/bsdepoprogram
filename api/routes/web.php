@@ -23,3 +23,12 @@ Route::prefix('product-brand')->group(function () {
     Route::delete('/delete', [App\Http\Controllers\StoreFront\ProductBrand\DeleteController::class, 'delete'])->name('product-brand.delete');
 });
 
+Route::prefix('product')->group(function () {
+    Route::get('', [App\Http\Controllers\StoreFront\Product\IndexController::class, 'list'])->name('product.list');
+    Route::get('/add', [App\Http\Controllers\StoreFront\Product\StoreController::class, 'view'])->name('product.add.view');
+    Route::post('/add', [App\Http\Controllers\StoreFront\Product\StoreController::class, 'add'])->name('product.add');
+    Route::get('/edit/{id}', [App\Http\Controllers\StoreFront\Product\UpdateController::class, 'view'])->name('product.edit.view');
+    Route::put('/{id}', [App\Http\Controllers\StoreFront\Product\UpdateController::class, 'edit'])->name('product.edit');
+    Route::delete('/delete', [App\Http\Controllers\StoreFront\Product\DeleteController::class, 'delete'])->name('product.delete');
+});
+

@@ -1,4 +1,4 @@
-@if (Route::is(['product-brand.add.view', 'product-brand.edit.view']))
+@if (Route::is(['product-brand.add.view', 'product-brand.edit.view', 'product.add.view', 'product.edit.view']))
     <div class="page-header">
         <div class="add-item d-flex">
             <div class="page-title">
@@ -23,8 +23,10 @@
 
 @if (
     !Route::is([
-        'product-brand.add.view',
-        'product-brand.edit.view',
+         'product-brand.add.view',
+         'product-brand.edit.view',
+         'product.add.view',
+         'product.edit.view'
     ]))
     <div class="page-header">
         <div class="add-item d-flex">
@@ -51,7 +53,7 @@
                         class="feather-rotate-ccw"></i></a>
             </li>
         </ul>
-        @if (Route::is(['product-brand.list']))
+        @if (Route::is(['product-brand.list', 'product.list']))
             <div class="page-btn">
                 <a href="{{ $li_2 }}" class="btn btn-added"><i data-feather="plus-circle"
                         class="me-2"></i>{{ $li_3 }}</a>

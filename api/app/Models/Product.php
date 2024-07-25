@@ -26,4 +26,9 @@ class Product extends Model
     {
         return $this->belongsTo(ProductBrand::class, 'product_brand', 'name');
     }
+
+    public function getPhotoUrlAttribute()
+    {
+        return $this->photo ? Storage::url($this->photo) : null;
+    }
 }

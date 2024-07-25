@@ -21,7 +21,7 @@ class StoreRequest extends FormRequest
             'part_type' => 'required|string',
             'unit' => 'required|string',
             'car_type' => 'required|string',
-            'photo' => 'required|string'
+            'photo' => 'nullable|image|mimes:jpg,png,jpeg,gif|max:2048'
         ];
     }
 }

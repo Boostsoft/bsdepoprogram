@@ -12,4 +12,8 @@ class ProductBrandService extends AbstractService
         $this->repository = $repository;
         $this->modelName = 'ProductBrand';
     }
+    public function getAllBrands()
+    {
+        return $this->repository->getAll(); // Markaları repository'den alır
+    }
 }

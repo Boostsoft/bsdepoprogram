@@ -20,15 +20,15 @@
                             </ul>
                         </li>
                         <li class="submenu">
-                            <a href="javascript:void(0);" class="{{ Request::is('/', 'product-brand', 'product-brand/add') ? 'active subdrop' : '' }}">
+                            <a href="javascript:void(0);" class="{{ Request::is('/', 'product-brand', 'product-brand/add', 'product-brand/edit/*',  'product', 'product/add', 'product/edit/*') ? 'active subdrop' : '' }}">
                                 <i data-feather="grid"></i><span>Katalog</span><span class="menu-arrow"></span>
                             </a>
                             <ul>
                                 <li>
-                                    <a href="{{ route('product-brand.list') }}" class="{{ Request::is('product-brand', 'product-brand/add') ? 'active' : '' }}">Ürün Marka</a>
+                                    <a href="{{ route('product-brand.list') }}" class="{{ Request::is('product-brand', 'product-brand/add', 'product-brand/edit/*') ? 'active' : '' }}">Ürün Marka</a>
                                 </li>
                                 <li>
-                                    <a href="{{ url('/') }}" class="{{ Request::is('/') ? 'active' : '' }}">Ürün</a>
+                                    <a href="{{ route('product.list') }}" class="{{ Request::is('product', 'product/add', 'product/edit/*') ? 'active' : '' }}">Ürün</a>
                                 </li>
                                 <li>
                                     <a href="{{ url('/') }}" class="{{ Request::is('/') ? 'active' : '' }}">Ambar</a>
